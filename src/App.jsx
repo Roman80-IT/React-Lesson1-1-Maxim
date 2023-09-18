@@ -25,7 +25,10 @@ export const App = props => {
       <div>
         {buttons.map(buttonProperties => {
           return (
-            <Button key={buttonProperties.id} variant={buttonProperties.variant}>
+            <Button
+              key={buttonProperties.id}
+              variant={buttonProperties.variant}
+            >
               {buttonProperties.children}
             </Button>
           );
